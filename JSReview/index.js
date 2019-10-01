@@ -1,18 +1,25 @@
+
 console.log('Hello World');
+
 const calculator = require('./Calculator');
-const Counter1= require('./Counter');
-const Counter2= require('./Counter');
 
 console.log(calculator.add(5,3));
 console.log(calculator.mul(5,3));
 console.log(calculator.div(5,3));
 
-console.log("counter1"+Counter1.val());
-Counter1.inc();
-Counter1.inc();
-console.log("counter1"+Counter1.val());
+const Counter = require('./Counter');
+var cnt0 = new Counter(0);
 
-console.log("counter1"+Counter2.val());
-Counter2.inc();
-Counter2.inc();
-console.log("counter1"+Counter2.val());
+console.log(cnt0.value());
+cnt0.increase();
+cnt0.increase();
+cnt0.increase();
+console.log(cnt0.value());
+
+var cnt1 = new Counter(0);
+
+console.log(cnt1.value());
+cnt1.increase();
+cnt1.increase();
+cnt1.increase();
+console.log(cnt1.value());

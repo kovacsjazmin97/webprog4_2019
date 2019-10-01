@@ -1,13 +1,22 @@
-class Counter {
-    cnt=0;
-    construktor(cnt_init) {
 
+class Counter{
+    constructor(cnt_init){
+        if(cnt_init === null){
+            this.cnt = 0;
+        }
+        else {
+            this.cnt = cnt_init;
+        }
+    }
+
+    increase(){
+        this.cnt++;
+    }
+    decrease(){
+        this.cnt--;
+    }
+    value(){
+        return this.cnt;
     }
 }
-var cnt=0;
-var increase = () => {cnt++};
-var decrease = () => {cnt--};
-var counter = () => {return cnt;};
-
-module.exports: Counter;
-};
+module.exports = Counter;
