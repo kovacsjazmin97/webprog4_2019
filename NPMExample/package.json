@@ -1,0 +1,8 @@
+{
+  "name": "NPMExample",
+  "version": "1.0.0",
+  "dependencies": {
+    "winston": "^3.2.1"
+    
+  }
+}
