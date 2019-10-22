@@ -15,3 +15,4 @@ const fs=require('fs');
 QRCode.toDataURL('Répa', (err, url) =>{
     console.log(url)
 })
+
